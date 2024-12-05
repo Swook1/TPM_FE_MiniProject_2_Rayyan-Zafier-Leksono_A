@@ -1,0 +1,126 @@
+/*
+Line Height: 200% (paragraph)
+Font-size : 
+14px (paragraph)
+24px (title)
+
+Colors : 
+#523FFF (Accent)
+#000000 (Base)
+#8484A7 (Secondary)
+#EDEDF9 (Border & Background)
+*/
+
+@import url("https://fonts.google.com/specimen/Inter");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 200%;
+}
+
+body {
+    font-family: "Inter";
+    background: #EDEDF9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+.card {
+    padding: 1rem 1.5rem;
+    width: min(80vw, 30rem);
+    
+    background: #ffffff;
+    border-radius: 0.5rem;
+    
+}
+
+h1{
+    font-size: 24px;
+    color: #000000;
+}
+
+p{
+    font-size: 14px;
+    color: #8484A7;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #EDEDF9; 
+    width: calc(100% + 1.5rem * 2); 
+    margin: 1rem 0; 
+    transform: translateX(-1.5rem);
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #EDEDF9;
+    border-radius: 0.25rem;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.input-container button {
+    padding: 1rem 1.2rem;
+    background-color: #523FFF; 
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #7469e6; 
+}
+
+.skill-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    gap: 0.5rem;
+}
+
+.skill-list .item {
+    display: flex;
+    border: 1px solid #EDEDF9;
+    border-radius: 100rem;
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    align-items: center;
+}
+
+.skill-list .item p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.item .delete-btn{
+    border: none;
+    background-color: transparent;
+    height: fit-content;
+}
+
+.delete-btn:hover{
+    color: red;
+    cursor: pointer;
+}
